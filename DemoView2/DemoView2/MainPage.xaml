@@ -69,7 +69,7 @@
                 Toggled="swiDec_Toggle">
         </Switch>
     </StackLayout>-->
-    <TableView Intent="Form">
+    <!--<TableView Intent="Form">
         <TableRoot>
             <TableSection Title="Datos Principales">
                 <TextCell Text="Nombre"
@@ -93,5 +93,13 @@
             </EntryCell>
             </TableSection>
         </TableRoot>
-    </TableView>
+    </TableView>-->
+    <!--<TimePicker x:Name="timel" TextColor="Blue">
+        
+    </TimePicker>-->
+    <WebView x:Name="wvActualizaP"
+             Source="https://desktop.github.com/"
+             Navigated="wvActualizaP_Navigated">
+        
+    </WebView>
 </ContentPage>
