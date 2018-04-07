@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoView2"
+             x:Class="DemoView2.MainPage">
+
+    <StackLayout>
+        <Picker x:Name="pinkMusic"
+                Title="Selceccione Género"
+                TextColor="DarkBlue"
+                SelectedIndexChanged="pickMusic_Changed">
+
+            <Picker.Items>
+                <x:String>Pop</x:String>
+                <x:String>Rock</x:String>
+                <x:String>Clasica</x:String>
+                <x:String>Opera</x:String>
+                <x:String>Carranga</x:String>
+
+            </Picker.Items>
+        </Picker>
+
+        <ProgressBar x:Name="progProceso"
+                  Progress="0.5">
+        </ProgressBar>
+
+        <Button x:Name="btnSimular"
+            BackgroundColor="Moccasin"
+            Text="Simular"
+            Clicked="btnSimular_Clicked">
+        </Button>
+
+        <SearchBar x:Name="sbNombres"
+            Placeholder="Buscar"
+            TextColor="SteelBlue"
+            BackgroundColor="Moccasin"
+            CancelButtonColor="Red"
+            SearchButtonPressed="sbNombre_Pressed">
+        </SearchBar>
+
+        <Slider x:Name="sldEdad"
+                Maximum="100"
+                Minimum="10"
+                Value="15"
+                ValueChanged="sldEdad_Changed">
+        </Slider>
+
+        <Label x:Name="lbEdad"
+               TextColor="Fuchsia"
+               FontSize="Large"
+               HorizontalTextAlignment="Center">
+        </Label>
+
+        <Stepper x:Name="stpCantidad"
+                 Maximum="100"
+                 Minimum="10"
+                 BackgroundColor="BlueViolet"
+                 ValueChanged="stpCantidad_Changed">
+        </Stepper>
+
+        <Label x:Name="lbCantidad"
+               TextColor="BlueViolet"
+               FontSize="Large"
+               HorizontalTextAlignment="Center">
+        </Label>
+
+        <Switch x:Name="swiDec"
+                IsToggled="True"
+                Toggled="swiDec_Toggle">
+        </Switch>
+    </StackLayout>
+</ContentPage>
