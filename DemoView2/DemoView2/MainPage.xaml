@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:DemoView2"
              x:Class="DemoView2.MainPage">
 
-    <StackLayout>
+    <!--<StackLayout>
         <Picker x:Name="pinkMusic"
                 Title="Selceccione Género"
                 TextColor="DarkBlue"
@@ -68,5 +68,30 @@
                 IsToggled="True"
                 Toggled="swiDec_Toggle">
         </Switch>
-    </StackLayout>
+    </StackLayout>-->
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection Title="Datos Principales">
+                <TextCell Text="Nombre"
+                      Detail="Ingresar Nombre">
+                </TextCell>
+                <EntryCell Placeholder="Ingresar Nombre" Label="Nombre Completo">
+                </EntryCell>
+                <SwitchCell Text="Correo">
+                    
+                </SwitchCell>
+                <ImageCell Text="Correo"
+                           Detail="Correo Electronico"
+                           ImageSource="gmail.png"></ImageCell>
+            </TableSection>
+
+            <TableSection Title="Datos Secuandarios">
+            <TextCell Text="Residencia"
+                      Detail="Ingresar Dirección">
+            </TextCell>
+            <EntryCell Placeholder="Ingresar Dirección" Label="Ejm: Calle 24 # 17-44">
+            </EntryCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
 </ContentPage>
